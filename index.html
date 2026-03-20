@@ -34,7 +34,7 @@
       line-height: 1.6;
     }
 
-    /* reusable */
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
@@ -222,16 +222,17 @@
       filter: drop-shadow(0 20px 25px -10px #0ea5e9);
     }
 
-.hero-image img{
-width:100%;
-max-width:380px;
-border-radius:25px;
-padding:6px;
-background:linear-gradient(135deg,#0ea5e9,#8b5cf6,#f43f5e);
-box-shadow:0 25px 50px rgba(14,165,233,0.4);
-object-fit:cover;
-aspect-ratio:1/1;
-transition:0.4s;
+.hero-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 50%;           /* changed from 25px to 50% */
+  padding: 6px;
+  background: linear-gradient(135deg, #0ea5e9, #8b5cf6, #f43f5e);
+  box-shadow: 0 25px 50px rgba(14, 165, 233, 0.4);
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  transition: 0.4s;
+  animation: float 3s ease-in-out infinite;
 }
 
 .hero-image img:hover{
@@ -1955,7 +1956,7 @@ body.dark footer {
     <section id="home">
       <div class="container hero">
         <div class="hero-content" data-aos="fade-right">
-          <h1>Hello, I'm <span>Shrijal</span></h1>
+          <h1>Hello, I'm <span>Shrijal Singh</span></h1>
            <p class="subhead">
           <span id="typing"></span>
             </p>
@@ -2762,13 +2763,9 @@ alert("Message sent successfully!");
 form.reset();
 
 }, function(error){
-
 alert("Failed to send message.");
-
 });
-
 });
-
 </script>
 </body>
 </html>
