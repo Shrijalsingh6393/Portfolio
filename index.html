@@ -43,7 +43,7 @@
     }
 
     section {
-      padding: 5rem 0;
+      padding: 6rem 0;
       position: relative;
     }
 
@@ -281,24 +281,31 @@
 
     /* about */
     #about p {
-      max-width: 750px;
+      max-width: 850px;
       margin: 0 auto;
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: #334155;
       background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(12px);
-      padding: 3rem;
-      border-radius: 3rem;
-      box-shadow: 0 30px 50px -20px #cbd5e1;
-      line-height: 1.8;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      transition: transform 0.3s;
+      backdrop-filter: blur(14px) saturate(180%);
+      -webkit-backdrop-filter: blur(14px) saturate(180%);
+      padding: 3.5rem;
+      border-radius: 4rem;
+      box-shadow: 
+        0 20px 50px -20px rgba(0, 0, 0, 0.1),
+        0 10px 30px -10px rgba(14, 165, 233, 0.05);
+      line-height: 2;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
     }
 
     #about p:hover {
-      transform: scale(1.01);
-      box-shadow: 0 35px 60px -20px rgba(14, 165, 233, 0.5);
+      transform: translateY(-8px) scale(1.005);
+      box-shadow: 
+        0 40px 70px -20px rgba(14, 165, 233, 0.3),
+        0 10px 30px -10px rgba(139, 92, 246, 0.15);
+      border-color: rgba(14, 165, 233, 0.4);
     }
 
     /* projects */
@@ -2184,7 +2191,7 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>    <!-- added Skills link -->
+        <li><a href="#skills">Skills</a></li> <!-- added Skills link -->
         <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#education">Education</a></li>
@@ -2207,7 +2214,8 @@
             <span id="typing"></span>
           </p>
           <div class="btn-group">
-            <a href="images/UpdatedCV.pdf" class="btn btn-primary" download="Shrijal_Singh_Resume.pdf">Download Resume</a>
+            <a href="images/UpdatedCV.pdf" class="btn btn-primary" download="Shrijal_Singh_Resume.pdf">Download
+              Resume</a>
           </div>
         </div>
         <div class="hero-image" data-aos="fade-left" data-aos-delay="150">
@@ -2221,10 +2229,12 @@
       <div class="container">
         <h2 data-aos="fade-up">About Me</h2>
         <p data-aos="fade-up" data-aos-delay="150">
-          Full‑stack developer skilled in C++, MERN stack, and Laravel.
-          Solved 300+ LeetCode problems and hold 4★ ratings on HackerRank.
-          Passionate about building elegant web applications and solving complex
-          algorithmic challenges. Actively seeking software development internship opportunities for 2025.
+          I am an aspiring full-stack developer with a strong passion for coding, 
+          problem-solving, and building practical software applications. I have hands-on 
+          experience with multiple programming languages, including Java, JavaScript, Node.js, PHP, C, C++, and Python.
+          I have built projects like Trackwise, a structured tracking and data management system and Web Suggestor, which provides
+          itelligent web-based recommendations to enhance user experience. I am eager to grow as a full-stack developer by working on 
+          real-world projects, continuously enhancing my technical skills, and embracing new learning opportunities and collaborations.
         </p>
       </div>
     </section>
@@ -2485,10 +2495,10 @@
             <p>Online privacy best practices</p>
             <span class="cert-issuer">NPTEL</span>
             <div class="cert-buttons">
-              <a href="images/Privacy and Security in Online Social Media (2).pdf" class="btn-cert btn-cert-view" target="_blank"
-                rel="noopener noreferrer"><i class="fas fa-eye"></i> View</a>
-              <a href="images/Privacy and Security in Online Social Media (2).pdf" class="btn-cert btn-cert-download" download><i
-                  class="fas fa-download"></i> Download</a>
+              <a href="images/Privacy and Security in Online Social Media (2).pdf" class="btn-cert btn-cert-view"
+                target="_blank" rel="noopener noreferrer"><i class="fas fa-eye"></i> View</a>
+              <a href="images/Privacy and Security in Online Social Media (2).pdf" class="btn-cert btn-cert-download"
+                download><i class="fas fa-download"></i> Download</a>
             </div>
           </div>
           <!-- cert 5 Java Certificate -->
@@ -2534,7 +2544,7 @@
           <div class="cert-card" data-aos="fade-up" data-aos-delay="450">
             <div class="cert-icon"><i class="fas fa-code"></i></div>
             <h3>C++ Advanced</h3>
-            <p>STL,Oops,  templates</p>
+            <p>STL,Oops, templates</p>
             <span class="cert-issuer">NeoColab · 2024</span>
             <div class="cert-buttons">
               <a href="images/CppCertificate.pdf" class="btn-cert btn-cert-view" target="_blank"
@@ -2575,7 +2585,7 @@
             <div class="resume-item-sub" style="font-weight: 600; font-size: 1.1rem; margin: 0.8rem 0; color: #334155;">
               Lovely Professional University · CGPA: 8.52/10</div>
             <ul class="resume-item-desc" style="font-size: 1rem; color: #475569;">
-              <li>Coursework: DSA, DBMS, Web Development, OOP.</li>
+              <li>Coursework: DSA, DBMS, Web Development, OOPs.</li>
             </ul>
           </div>
 
@@ -3048,5 +3058,4 @@
     });
   </script>
 </body>
-
 </html>
